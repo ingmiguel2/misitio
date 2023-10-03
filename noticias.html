@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noticias - Diseño Similar a Facebook</title>
+    <!-- Enlazar Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Estilos CSS personalizados */
+        body {
+            background-color: #f0f2f5; /* Color de fondo similar a Facebook */
+            color: #000000; /* Texto negro */
+        }
+        .navbar {
+            background-color: #1877f2; /* Color del menú similar a Facebook */
+        }
+        .jumbotron {
+            background-color: #ffffff; /* Fondo blanco del jumbotron */
+            color: #000000; /* Texto negro en el jumbotron */
+            padding: 20px;
+            margin-bottom: 0;
+            position: relative;
+        }
+        .carousel-item img {
+            width: 70%; /* Tamaño mediano de la imagen */
+            border-radius: 10px; /* Bordes redondeados */
+            margin: 0 auto; /* Centrar la imagen */
+        }
+        .carousel-control-prev, .carousel-control-next {
+            color: #1877f2; /* Color de las flechas del carrusel similar a Facebook */
+        }
+        .carousel-indicators li {
+            border: 2px solid #1877f2; /* Borde de los indicadores similar a Facebook */
+        }
+        .news-text {
+            background-color: rgba(255, 255, 255, 0.8); /* Fondo semitransparente similar a Facebook */
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .modal-content {
+            background-color: #ffffff; /* Fondo blanco del modal */
+            color: #000000; /* Texto negro en el modal */
+        }
+        .modal-header {
+            background-color: #1877f2; /* Color de encabezado del modal similar a Facebook */
+            color: #ffffff; /* Texto blanco en el encabezado del modal */
+        }
+        .modal-title {
+            color: #ffffff; /* Texto blanco en el título del modal */
+        }
+    </style>
+</head>
+<body>
+    <!-- Menú de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Inicio</a>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="equipo.html">Equipo</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="noticias.html">Noticias</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Jumbotron con Carrusel de Noticias -->
+    <div class="jumbotron">
+        <h1>Noticias</h1>
+        <div id="carouselNoticias" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselNoticias" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselNoticias" data-slide-to="1"></li>
+                <li data-target="#carouselNoticias" data-slide-to="2"></li>
+                <li data-target="#carouselNoticias" data-slide-to="3"></li>
+                <li data-target="#carouselNoticias" data-slide-to="4"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/noticia1.jpg" alt="Noticia 1">
+                    <div class="carousel-caption">
+                        <h3>Noticia 1</h3>
+                        <p class="news-text">Texto de la Noticia 1 <a href="#" data-toggle="modal" data-target="#modalNoticia1">Ver más</a></p>
+                    </div>
+                </div>
+                <!-- Agrega más noticias siguiendo la estructura de la primera noticia -->
+            </div>
+            <a class="carousel-control-prev" href="#carouselNoticias" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselNoticias" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Siguiente</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- Modales para Ampliar Información de Noticias -->
+    <!-- Modal Noticia 1 -->
+    <div class="modal fade" id="modalNoticia1" tabindex="-1" role="dialog" aria-labelledby="modalNoticia1Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalNoticia1Label">Noticia 1 - Ampliación de Información</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Ampliación de información sobre la Noticia 1.
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Agrega más modales para cada noticia siguiendo la estructura del modal de la primera noticia -->
+
+    <!-- Enlazar Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
+

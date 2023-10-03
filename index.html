@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Sitio Web</title>
+    <!-- Enlazar Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Estilos CSS personalizados */
+        body {
+            background-color: #ffffff; /* Fondo blanco */
+            color: #000000; /* Texto negro */
+        }
+        .navbar {
+            background-color: #58B2AF; /* Color del menú */
+        }
+        .jumbotron {
+            background-image: url('https://cdn.pixabay.com/photo/2018/09/27/09/22/artificial-intelligence-3706562_1280.jpg');
+            background-size: cover;
+            text-align: center;
+            color: #ffffff; /* Texto blanco en el jumbotron */
+            padding: 100px;
+            margin-bottom: 0;
+            position: relative;
+        }
+        .jumbotron::after {
+            content: "";
+            background: url('https://via.placeholder.com/1920x1080?text=Marca+de+agua');
+            opacity: 0.2; /* Opacidad de la marca de agua */
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            position: absolute;
+        }
+        .jumbotron p {
+            background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Menú de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Inicio</a>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="equipo.html">Equipo</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="noticias.html">Noticias</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Jumbotron -->
+    <div class="jumbotron">
+        <h1>Bienvenido a Mi Sitio Web</h1>
+        <p>Explora nuestro contenido y descubre más sobre nuestro proyecto.</p>
+    </div>
+
+    <!-- Contenido principal -->
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-md-6">
+                <h2>Descripción del Proyecto</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla euismod, justo sit amet commodo volutpat.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla euismod, justo sit amet commodo volutpat.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla euismod, justo sit amet commodo volutpat.</p>
+            </div>
+            <div class="col-md-6">
+                <h2>Video de Presentación</h2>
+                <!-- Insertar el video de YouTube -->
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/K5pkkuiyRzk" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- Enlazar Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
